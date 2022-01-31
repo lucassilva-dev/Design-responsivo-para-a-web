@@ -1,0 +1,70 @@
+<!--
+
+No desafio anterior, você mudou o momento da animação de 
+dois elementos com a mesma animação ao alterar a regra @keyframes. 
+Você pode alcançar o mesmo resultado manipulando a propriedade animation-duration 
+de vários elementos.
+
+Na animação sendo executada no editor de código, há três estrelas no céu que 
+cintilam ao mesmo instante infinitamente. Para fazê-las brilhar com ritmos diferentes, 
+você pode definir a propriedade animation-duration com valores diferentes para cada 
+elemento.
+
+Defina a propriedade animation-duration dos elementos com as classes star-1, 
+star-2, e star-3 para 1s, 0.9s, e 1.1s, respectivamente.
+
+-->
+
+<style>
+    .stars {
+      background-color: white;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      animation-iteration-count: infinite;
+    }
+  
+    .star-1 {
+      margin-top: 15%;
+      margin-left: 60%;
+      animation-duration: 1s;
+      animation-name: twinkle;
+    }
+  
+    .star-2 {
+      margin-top: 25%;
+      margin-left: 25%;
+      animation-duration: 0.9s;
+      animation-name: twinkle;
+    }
+  
+    .star-3 {
+      margin-top: 10%;
+      margin-left: 50%;
+      animation-duration: 1.1s;
+      animation-name: twinkle;
+    }
+  
+    @keyframes twinkle {
+      20% {
+        transform: scale(0.5);
+        opacity: 0.5;
+      }
+    }
+  
+    #back {
+      position: fixed;
+      padding: 0;
+      margin: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
+    }
+  </style>
+  
+  <div id="back"></div>
+  <div class="star-1 stars"></div>
+  <div class="star-2 stars"></div>
+  <div class="star-3 stars"></div>

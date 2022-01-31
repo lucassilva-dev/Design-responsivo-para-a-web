@@ -1,0 +1,40 @@
+<!--
+
+Quando os elementos são posicionados para se sobrepor 
+(ou seja, usando position: absolute | relative | fixed | sticky), 
+o elemento que vem por último no código HTML aparecerá, por padrão, 
+por cima dos elementos anteriores. No entanto, a propriedade z-index 
+pode modificar a ordem em que os elementos são empilhados (sobrepostos) 
+uns sobre os outros. Essa propriedade deve receber um número inteiro 
+(ou seja, um número do conjuntos dos inteiros e não decimal). 
+Valores maiores para a propriedade z-index de um elemento movem-no 
+para cima na pilha. Valores menores movem-no para baixo na pilha.
+
+Na classe first, adicione a propriedade z-index com o valor de 2. 
+Isso fará com que o retângulo vermelho cubra o retângulo azul.
+
+-->
+
+<style>
+    div {
+      width: 60%;
+      height: 200px;
+      margin-top: 20px;
+    }
+  
+    .first {
+      background-color: red;
+      position: absolute;
+      z-index: 2;
+    }
+    .second {
+      background-color: blue;
+      position: absolute;
+      left: 40px;
+      top: 50px;
+      z-index: 1;
+    }
+  </style>
+  
+  <div class="first"></div>
+  <div class="second"></div>

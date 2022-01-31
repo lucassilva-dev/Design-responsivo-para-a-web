@@ -1,0 +1,32 @@
+<!--
+A próxima função da propriedade transform é skewX(), 
+que inclina o elemento selecionado ao longo de seu eixo X (horizontal) 
+em um determinado grau.
+
+O código a seguir inclina o elemento de parágrafo em -32 graus ao longo do eixo X.
+
+p {
+  transform: skewX(-32deg);
+}
+
+Incline o elemento com o id bottom em 24 graus ao longo do eixo X usando a 
+propriedade transform.
+-->
+
+<style>
+    div {
+      width: 70%;
+      height: 100px;
+      margin:  50px auto;
+    }
+    #top {
+      background-color: red;
+    }
+    #bottom {
+      background-color: blue;
+      transform: skewX(24deg);
+    }
+  </style>
+  
+  <div id="top"></div>
+  <div id="bottom"></div>

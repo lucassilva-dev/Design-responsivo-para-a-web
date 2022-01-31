@@ -1,0 +1,29 @@
+<!--
+
+Dado que a função skewX() inclina o elemento selecionado ao longo do eixo X em um 
+determinado grau, não é nenhuma surpresa que a propriedade skewY() inclina um 
+elemento ao longo do eixo Y (vertical).
+
+Incline o elemento com a id de top -10 graus ao longo do eixo Y usando a propriedade 
+transform.
+
+-->
+
+<style>
+    div {
+      width: 70%;
+      height: 100px;
+      margin: 50px auto;
+    }
+    #top {
+      background-color: red;
+      transform: skewY(-10deg);
+    }
+    #bottom {
+      background-color: blue;
+      transform: skewX(24deg);
+    }
+  </style>
+  
+  <div id="top"></div>
+  <div id="bottom"></div>

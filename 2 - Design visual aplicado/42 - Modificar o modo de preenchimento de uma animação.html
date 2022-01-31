@@ -1,0 +1,38 @@
+<!--
+
+Está legal, mas ainda podemos melhorar. 
+Observe como a animação é reiniciada após 500ms, 
+fazendo com que o botão volte à cor original. Nós queremos que o botão permaneça destacado.
+
+Isso pode ser feito definindo a propriedade animation-fill-mode 
+com o valor forwards. O animation-fill-mode especifica o estilo 
+que será aplicado a um elemento quando a animação terminar. 
+Você pode configurá-la assim:
+
+animation-fill-mode: forwards;
+Defina a propriedade animation-fill-mode do seletor button:hover 
+com o valor forwards para que o botão permaneça destacado quando o usuário tirar o mouse.
+
+-->
+
+<style>
+    button {
+      border-radius: 5px;
+      color: white;
+      background-color: #0F5897;
+      padding: 5px 10px 8px 10px;
+    }
+    button:hover {
+      animation-name: background-color;
+      animation-duration: 500ms;
+      /* Altere apenas o código abaixo desta linha */
+      animation-fill-mode: forwards;
+      /* Altere apenas o código acima desta linha */
+    }
+    @keyframes background-color {
+      100% {
+        background-color: #4791d0;
+      }
+    }
+  </style>
+  <button>Register</button>

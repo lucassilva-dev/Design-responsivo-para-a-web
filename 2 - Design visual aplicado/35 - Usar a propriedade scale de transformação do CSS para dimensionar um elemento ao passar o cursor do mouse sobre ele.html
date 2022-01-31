@@ -1,0 +1,37 @@
+<!--
+
+A propriedade transform tem uma variedade de funções que permitem dimensionar, 
+mover, girar ou inclinar os elementos, entre outras. Quando usado com pseudoclasses 
+como :hover, que especificam um certo estado de um elemento, a propriedade 
+transform pode facilmente adicionar interatividade aos seus elementos.
+
+Aqui está um exemplo para dimensionar os elementos do parágrafo para 2.1 
+vezes seu tamanho original quando um usuário passa o mouse sobre eles:
+
+p:hover {
+  transform: scale(2.1);
+}
+Observação: aplicar uma transformação a um elemento div também afetará 
+quaisquer elementos filho contidos na div.
+
+Adicione uma regra CSS para o estado hover da div e use a propriedade 
+transform para dimensionar o elemento div para 1.1 vezes seu tamanho original quando um usuário passa o mouse sobre ele.
+
+-->
+
+<style>
+    div {
+      width: 70%;
+      height: 100px;
+      margin:  50px auto;
+      background: linear-gradient(
+        53deg,
+        #ccfffc,
+        #ffcccf
+      );
+    }
+    div:hover {
+      transform: scale(1.1);
+    }
+  </style>
+  <div></div>
