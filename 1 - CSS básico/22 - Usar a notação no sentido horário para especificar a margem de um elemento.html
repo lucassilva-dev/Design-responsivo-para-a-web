@@ -1,0 +1,55 @@
+<!--
+
+Vamos tentar de novo, mas com margin desta vez.
+
+Em vez de especificar as propriedades margin-top, 
+margin-right, margin-bottom, e margin-left individualmente, 
+você pode especificá-las todas em uma linha, como esta:
+
+margin: 10px 20px 10px 20px;
+Esses quatro valores funcionam como em um relógio: acima, 
+à direita, abaixo, à esquerda. Eles produzirão exatamente o 
+mesmo resultado como quando usamos as propriedades específicas para cada margem.
+
+Use a notação no sentido horário para dar ao elemento com a 
+classe blue-box uma margem de 40px nos lados superior e esquerdo, 
+mas apenas 20px nos lados inferior e direito.
+
+-->
+
+<style>
+    .injected-text {
+      margin-bottom: -25px;
+      text-align: center;
+    }
+  
+    .box {
+      border-style: solid;
+      border-color: black;
+      border-width: 5px;
+      text-align: center;
+    }
+  
+    .yellow-box {
+      background-color: yellow;
+      padding: 20px 40px 20px 40px;
+    }
+  
+    .red-box {
+      background-color: crimson;
+      color: #fff;
+      margin: 20px 40px 20px 40px;
+    }
+  
+    .blue-box {
+      background-color: blue;
+      color: #fff;
+      margin: 40px 20px 20px 40px;
+    }
+  </style>
+  <h5 class="injected-text">margin</h5>
+  
+  <div class="box yellow-box">
+    <h5 class="box red-box">padding</h5>
+    <h5 class="box blue-box">padding</h5>
+  </div>

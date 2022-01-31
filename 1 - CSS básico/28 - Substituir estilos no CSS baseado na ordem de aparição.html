@@ -1,0 +1,40 @@
+<!--
+
+A classe pink-text sobrescreveu a declaração de estilo do elemento body!
+Com isso, podemos perceber que classes sobrescrevem os estilos declarados no 
+elemento body. Isso nos leva à pergunta: o que podemos fazer para substituir a 
+classe pink-text?
+
+Crie uma classe CSS adicional chamada blue-text que dá a um elemento a cor azul. 
+Certifique-se de que esta nova classe esteja abaixo da classe pink-text.
+
+Além de classe pink-text, aplique a classe blue-text ao elemento h1, 
+e vamos ver qual tem maior prioridade.
+
+A aplicação de várias classes a um mesmo elemento HTML é feita com um espaço entre 
+cada uma, assim:
+
+class="class1 class2"
+Observação: a ordem das classes dentro do atributo "class" não é importante.
+
+O importante é a ordem em que as classes (class) são declaradas dentro da tag <style>. 
+A última declaração sempre terá prioridade sobre a anterior. Como a classe 
+.blue-text é declarada por último, ela sobrescreve os estilos que 
+foram declarados na classe .pink-text
+
+-->
+
+<style>
+    body {
+      background-color: black;
+      font-family: monospace;
+      color: green;
+    }
+    .pink-text {
+      color: pink;
+    }
+    .blue-text {
+      color: blue;
+    }
+  </style>
+  <h1 class="pink-text blue-text">Hello World!</h1>

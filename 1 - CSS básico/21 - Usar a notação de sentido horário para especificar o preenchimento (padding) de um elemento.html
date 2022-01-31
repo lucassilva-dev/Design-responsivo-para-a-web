@@ -1,0 +1,55 @@
+<!--
+
+Em vez de especificar as propriedades padding-top, padding-right,
+padding-bottom e padding-left individualmente,
+você pode especificar todas elas em uma única linha, assim:
+
+padding: 10px 20px 10px 20px;
+Esses quatro valores funcionam como em 
+um relógio: acima, à direita, abaixo, 
+à esquerda. 
+Eles produzirão exatamente o mesmo resultado 
+como quando usamos as propriedades específicas para cada preenchimento.
+
+Use a notação no sentido horário para dar à classe 
+.blue-box um preenchimento (padding) de 40px nos lados superior e esquerdo, 
+mas apenas 20px nos lados inferior e direito.
+
+-->
+
+<style>
+    .injected-text {
+      margin-bottom: -25px;
+      text-align: center;
+    }
+  
+    .box {
+      border-style: solid;
+      border-color: black;
+      border-width: 5px;
+      text-align: center;
+    }
+  
+    .yellow-box {
+      background-color: yellow;
+      padding: 20px 40px 20px 40px;
+    }
+  
+    .red-box {
+      background-color: crimson;
+      color: #fff;
+      padding: 20px 40px 20px 40px;
+    }
+  
+    .blue-box {
+      background-color: blue;
+      color: #fff;
+      padding: 40px 20px 20px 40px;
+    }
+  </style>
+  <h5 class="injected-text">margin</h5>
+  
+  <div class="box yellow-box">
+    <h5 class="box red-box">padding</h5>
+    <h5 class="box blue-box">padding</h5>
+  </div>
