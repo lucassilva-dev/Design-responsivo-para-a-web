@@ -1,0 +1,43 @@
+<!--
+Inserir um elemento de âncora em um parágrafo
+Você pode incluir links dentro de outros elementos de texto.
+
+<p>
+  Here's a <a target="_blank" href="https://www.freecodecamp.org"> link to 
+      www.freecodecamp.org</a> for you to follow.
+</p>
+Vamos dividir o exemplo em partes. O texto normal está dentro do elemento p:
+
+<p> Here's a ... for you to follow. </p>
+Em seguida, temos o elemento de âncora <a> (que exige uma tag de fechamento </a>):
+
+<a> ... </a>
+target é um atributo da tag de âncora que especifica onde abrir o link. O valor 
+_blank especifica que o link deve ser aberto em uma nova aba. O atributo href da 
+tag de âncora contém o endereço URL do link:
+
+<a href="https://www.freecodecamp.org" target="_blank"> ... </a>
+O texto, link to www.freecodecamp.org, dentro do elemento a, é chamado de 
+texto âncora e exibirá o link que pode ser clicado:
+
+<a href=" ... " target="...">link to freecodecamp.org</a>
+O resultado final do exemplo ficará assim:
+
+Aqui temos o link para www.freecodecamp.org para você seguir.
+
+Insira o elemento a dentro de um novo elemento p. Não crie uma nova tag de âncora. 
+O novo parágrafo deve ter um texto que diz View more cat photos, onde cat photos é um 
+link, enquanto o restante é texto sem formatação.
+-->
+
+<h2>CatPhotoApp</h2>
+<main>
+<p> View more cat photos
+  <a href="https://www.freecatphotoapp.com" target="_blank">cat photos</a>
+</p>
+
+  <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+
+  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+</main>
