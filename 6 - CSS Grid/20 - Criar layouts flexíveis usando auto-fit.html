@@ -1,0 +1,64 @@
+<!--
+
+auto-fit funciona quase de forma idêntica ao auto-fill. A única diferença é que, 
+quando o tamanho do grid container for maior que a soma da largura de todos os grid items, 
+o auto-fill continua inserindo linhas ou colunas vazias e empurra os grid items para 
+o lado, enquanto o auto-fit estica os grid items para caber no tamanho do grid container.
+
+Observação: se não for possível ajustar todos os itens em uma linha, eles serão 
+movidos para uma nova linha.
+
+No segundo grid, use auto-fit com repeat para preencher o grid com colunas que 
+tenham uma largura mínima de 60px e máxima de 1fr. Em seguida, redimensione a 
+janela do navegador para ver o auto-fit em ação.
+
+-->
+
+<style>
+    .item1{background:LightSkyBlue;}
+    .item2{background:LightSalmon;}
+    .item3{background:PaleTurquoise;}
+    .item4{background:LightPink;}
+    .item5{background:PaleGreen;}
+  
+    .container {
+      font-size: 40px;
+      min-height: 100px;
+      width: 100%;
+      background: LightGray;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-gap: 10px;
+    }
+  
+    .container2 {
+      font-size: 40px;
+      min-height: 100px;
+      width: 100%;
+      background: Silver;
+      display: grid;
+      /* Altere apenas o código abaixo desta linha */
+  
+      grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  
+      /* Altere apenas o código acima desta linha */
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-gap: 10px;
+    }
+  </style>
+  
+  <div class="container">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>
+    <div class="item4">4</div>
+    <div class="item5">5</div>
+  </div>
+  <div class="container2">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>
+    <div class="item4">4</div>
+    <div class="item5">5</div>
+  </div>

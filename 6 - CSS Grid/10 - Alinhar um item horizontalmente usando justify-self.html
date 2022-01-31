@@ -1,0 +1,53 @@
+<!--
+
+No CSS Grid, o conteúdo de cada item está localizado em uma 
+caixa que chamamos de célula. Você pode alinhar a posição do 
+conteúdo dentro da célula horizontalmente usando a propriedade 
+justify-self em um grid item. Por padrão, esta propriedade possui 
+um valor de stretch, que fará com que o conteúdo preencha toda a 
+largura da célula. Esta propriedade do CSS Grid também aceita outros valores:
+
+start: alinha o conteúdo à esquerda da célula,
+
+center: alinha o conteúdo no centro da célula,
+
+end: alinha o conteúdo à direita da célula.
+
+Use a propriedade justify-self para centralizar o item que possui a classe item2.
+
+-->
+
+<style>
+    .item1{background: LightSkyBlue;}
+  
+    .item2 {
+      background: LightSalmon;
+      /* Altere apenas o código abaixo desta linha */
+      justify-self: center;
+  
+      /* Altere apenas o código acima desta linha */
+    }
+  
+    .item3{background:PaleTurquoise;}
+    .item4{background:LightPink;}
+    .item5{background:PaleGreen;}
+  
+    .container {
+      font-size: 40px;
+      min-height: 300px;
+      width: 100%;
+      background: LightGray;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-gap: 10px;
+    }
+  </style>
+  
+  <div class="container">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>
+    <div class="item4">4</div>
+    <div class="item5">5</div>
+  </div>

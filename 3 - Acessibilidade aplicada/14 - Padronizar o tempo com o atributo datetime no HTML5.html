@@ -1,0 +1,53 @@
+<!--
+
+Continuando com o tema da data, o HTML5 também introduziu o 
+elemento time junto com um atributo datetime para padronizar os 
+tempos de data e hora. O elemento time é um elemento inline que 
+pode envolver a data ou a hora na página. Um atributo datetime mantém 
+um formato válido dessa data. O valor atribuído a este atributo será 
+acessado por dispositivos assistivos. Isso ajuda a evitar confusão ao 
+declarar uma versão padronizada de um horário, mesmo que seja escrito de 
+maneira informal ou coloquial no texto.
+
+Exemplo:
+
+<p>Master Camper Cat officiated the cage match between Goro and 
+    Scorpion <time datetime="2013-02-13">last Wednesday</time>, 
+    which ended in a draw.</p>
+Os resultados da pesquisa do jogo Mortal Kombat do Camper Cat chegaram! 
+Envolva uma tag time em torno do texto Thursday, September 15<sup>th</sup> e 
+adicione um atributo datetime definido com o valor de 2016-09-15.
+
+-->
+
+<body>
+    <header>
+      <h1>Tournaments</h1>
+    </header>
+    <article>
+      <h2>Mortal Kombat Tournament Survey Results</h2>
+  
+      <!-- Altere apenas o código abaixo desta linha -->
+  
+      <p>Thank you to everyone for responding to Master Camper Cat's survey. The best day to host the vaunted Mortal Kombat tournament is <time datetime="2016-09-15">Thursday, September 15<sup>th</sup></time>. May the best ninja win!</p>
+  
+      <!-- Altere apenas o código acima desta linha -->
+  
+      <section>
+        <h3>Comments:</h3>
+        <article>
+          <p>Posted by: Sub-Zero on <time datetime="2016-08-13T20:01Z">August 13<sup>th</sup></time></p>
+          <p>Johnny Cage better be there, I'll finish him!</p>
+        </article>
+        <article>
+          <p>Posted by: Doge on <time datetime="2016-08-15T08:12Z">August 15<sup>th</sup></time></p>
+          <p>Wow, much combat, so mortal.</p>
+        </article>
+        <article>
+          <p>Posted by: The Grim Reaper on <time datetime="2016-08-16T00:00Z">August 16<sup>th</sup></time></p>
+          <p>Looks like I'll be busy that day.</p>
+        </article>
+      </section>
+    </article>
+    <footer>&copy; 2018 Camper Cat</footer>
+  </body>

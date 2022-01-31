@@ -1,0 +1,42 @@
+<!--
+
+Até agora, nos grids que você criou, as colunas estavam todas grudadas. 
+Às vezes, você pode querer um espaçamento entre as colunas. 
+Para adicionar um espaço entre as colunas, use a propriedade grid-column-gap:
+
+grid-column-gap: 10px;
+O exemplo acima cria 10px de espaço vazio entre todas as colunas.
+
+Dê às colunas do grid um espaçamento de 20px.
+
+-->
+
+<style>
+    .d1{background:LightSkyBlue;}
+    .d2{background:LightSalmon;}
+    .d3{background:PaleTurquoise;}
+    .d4{background:LightPink;}
+    .d5{background:PaleGreen;}
+  
+    .container {
+      font-size: 40px;
+      min-height: 300px;
+      width: 100%;
+      background: LightGray;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      /* Altere apenas o código abaixo desta linha */
+      grid-column-gap: 20px;
+  
+      /* Altere apenas o código acima desta linha */
+    }
+  </style>
+  
+  <div class="container">
+    <div class="d1">1</div>
+    <div class="d2">2</div>
+    <div class="d3">3</div>
+    <div class="d4">4</div>
+    <div class="d5">5</div>
+  </div>

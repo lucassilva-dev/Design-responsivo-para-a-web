@@ -1,0 +1,43 @@
+<!--
+
+Às vezes, você quer que todos os itens no seu grid possuam o mesmo alinhamento. 
+Você pode usar as propriedades aprendidas anteriormente e alinhá-los individualmente 
+ou pode alinhá-los todos de uma vez horizontalmente usando a propriedade justify-items 
+em seu grid container. Essa propriedade aceita todos os mesmos valores que você 
+aprendeu nos dois desafios anteriores. A diferença é que ela moverá todos os itens 
+do grid para o alinhamento especificado.
+
+Use esta propriedade para centralizar horizontalmente todos itens.
+
+-->
+
+<style>
+    .item1{background:LightSkyBlue;}
+    .item2{background:LightSalmon;}
+    .item3{background:PaleTurquoise;}
+    .item4{background:LightPink;}
+    .item5{background:PaleGreen;}
+  
+    .container {
+      font-size: 40px;
+      min-height: 300px;
+      width: 100%;
+      background: LightGray;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-gap: 10px;
+      /* Altere apenas o código abaixo desta linha */
+      justify-items: center;
+  
+      /* Altere apenas o código acima desta linha */
+    }
+  </style>
+  
+  <div class="container">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>
+    <div class="item4">4</div>
+    <div class="item5">5</div>
+  </div>

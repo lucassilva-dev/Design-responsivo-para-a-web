@@ -1,0 +1,81 @@
+<!--
+
+O atributo tabindex também especifica a ordem em que 
+a tecla tab percorrerá os elementos. Isso é obtido quando 
+o valor do atributo é definido como um número positivo (1 ou acima).
+
+Definir um tabindex="1" fará com que o foco seja levado para 
+esse elemento quando o usuário apertar a tecla tab pela primeira vez. 
+Em seguida, o foco passará ao próximo elemento que tem um tabindex 
+maior que o anterior. Quando não existirem mais itens para receberem 
+foco, ele volta ao valor inicial - tabindex="0".
+
+É importante observar que quando a ordem da tecla tab é definida 
+dessa forma, ela sobrescreve a ordem padrão (que se baseia no código HTML). 
+Isso pode confundir os usuários que esperam iniciar a navegação do topo da página. 
+Esta técnica pode ser necessária em algumas circunstâncias, mas, em termos de 
+acessibilidade, tome cuidado antes de aplicá-la.
+
+Exemplo:
+
+<div tabindex="1">I get keyboard focus, and I get it first!</div>
+<div tabindex="2">I get keyboard focus, and I get it second!</div>
+
+O Camper Cat tem um campo de pesquisa em sua página Citações Inspiradoras, 
+o qual ele planeja posicionar no canto superior direito com CSS. Ele deseja 
+que os controles de formulário search input e submit input sejam os dois 
+primeiros itens na ordem das guias. Adicione um atributo tabindex definido 
+como 1 para o search input e um atributo tabindex definido como 2 para o submit input.
+
+Outra questão a ser observada é o fato de que alguns navegadores podem 
+colocar você no meio da ordem de navegação via tecla "tab" quando um 
+elemento é clicado. Um elemento foi adicionado à página que garante 
+que você sempre iniciará no início de sua ordem ao pressionar a tecla tab.
+
+-->
+
+<body>
+    <div tabindex="1" class="overlay"></div>
+    <header>
+      <h1>Even Deeper Thoughts with Master Camper Cat</h1>
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Training</a></li>
+        </ul>
+      </nav>
+    </header>
+    <form>
+      <label for="search">Search:</label>
+  
+  
+      <input type="search" name="search" id="search" tabindex="1">
+      <input type="submit" name="submit" value="Submit" id="submit" tabindex="2">
+  
+  
+    </form>
+    <h2>Inspirational Quotes</h2>
+    <blockquote>
+      <p>&ldquo;There's no Theory of Evolution, just a list of creatures I've allowed to live.&rdquo;<br>
+      - Chuck Norris</p>
+    </blockquote>
+    <blockquote>
+      <p>&ldquo;Wise men say forgiveness is divine, but never pay full price for late pizza.&rdquo;<br>
+      - TMNT</p>
+    </blockquote>
+    <footer>&copy; 2018 Camper Cat</footer>
+  </body>
+  <style>
+    body {
+      height: 100%;
+      margin: 0 !important;
+      padding: 8px;
+    }
+    .overlay {
+      margin: -8px;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  </style>

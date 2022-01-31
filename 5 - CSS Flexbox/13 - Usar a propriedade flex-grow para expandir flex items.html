@@ -1,0 +1,38 @@
+<!--
+
+O oposto de flex-shrink é a propriedade flex-grow. Lembre-se de que flex-shrink 
+controla o tamanho dos itens quando o contêiner encolhe. A propriedade flex-grow 
+controla o tamanho dos itens quando o contêiner pai expande.
+
+Usando um exemplo semelhante ao do último desafio, se um item tem um flex-grow com o 
+valor de 1 e o outro tem um flex-grow com o valor de 3, aquele com o valor de 3 
+crescerá três vezes mais do que o outro.
+
+Adicione a propriedade CSS flex-grow aos elementos de id #box-1 e #box-2. Dê para 
+#box-1 o valor 1 e #box-2 o valor 2.
+
+-->
+
+<style>
+    #box-container {
+      display: flex;
+      height: 500px;
+    }
+  
+    #box-1 {
+      background-color: dodgerblue;
+      height: 200px;
+      flex-grow: 1;
+    }
+  
+    #box-2 {
+      background-color: orangered;
+      height: 200px;
+      flex-grow: 2;
+    }
+  </style>
+  
+  <div id="box-container">
+    <div id="box-1"></div>
+    <div id="box-2"></div>
+  </div>

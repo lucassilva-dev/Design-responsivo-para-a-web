@@ -1,0 +1,44 @@
+<!--
+
+Só criar um elemento grid não faz muita coisa. Você também precisa 
+definir a estrutura do grid. Para adicionar colunas ao grid, use a 
+propriedade grid-template-columns em um grid container, como demonstrado abaixo:
+
+.container {
+  display: grid;
+  grid-template-columns: 50px 50px;
+}
+Isso vai dar ao grid duas colunas, cada uma com 50px de largura. 
+O número dos parâmetros dados à propriedade grid-template-columns 
+indica o número de colunas no grid. O valor de cada parâmetro indica a largura de cada coluna.
+
+Dê ao grid container três colunas com 100px de largura.
+
+-->
+
+<style>
+    .d1{background:LightSkyBlue;}
+    .d2{background:LightSalmon;}
+    .d3{background:PaleTurquoise;}
+    .d4{background:LightPink;}
+    .d5{background:PaleGreen;}
+  
+    .container {
+      font-size: 40px;
+      width: 100%;
+      background: LightGray;
+      display: grid;
+      /* Altere apenas o código abaixo desta linha */
+      grid-template-columns: 100px 100px 100px;
+  
+      /* Altere apenas o código acima desta linha */
+    }
+  </style>
+  
+  <div class="container">
+    <div class="d1">1</div>
+    <div class="d2">2</div>
+    <div class="d3">3</div>
+    <div class="d4">4</div>
+    <div class="d5">5</div>
+  </div>

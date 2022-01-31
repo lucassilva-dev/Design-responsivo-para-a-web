@@ -1,0 +1,42 @@
+<!--
+
+Ao adicionar display: flex a um elemento, você o transforma 
+em um flex container. Isso faz com que seja possível 
+alinhar todos os filhos desse elemento em linhas ou colunas. 
+Para fazer isso, você deve usar a propriedade flex-direction no 
+item pai e definir o valor desta usando row ou column. Criar uma row (linha) 
+vai alinhar os itens filhos horizontalmente. Criar uma column (coluna) vai 
+alinhar os itens filhos verticalmente.
+
+Outras opções para flex-direction são row-reverse e column-reverse.
+
+Observação: o valor padrão da propriedade flex-direction é row.
+
+Adicione a propriedade CSS flex-direction ao elemento de id #box-container 
+e dê a ela o valor de row-reverse.
+    
+-->
+
+<style>
+    #box-container {
+      display: flex;
+      height: 500px;
+      flex-direction: row-reverse
+    }
+    #box-1 {
+      background-color: dodgerblue;
+      width: 50%;
+      height: 50%;
+    }
+  
+    #box-2 {
+      background-color: orangered;
+      width: 50%;
+      height: 50%;
+    }
+  </style>
+  
+  <div id="box-container">
+    <div id="box-1"></div>
+    <div id="box-2"></div>
+  </div>
